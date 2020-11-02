@@ -415,13 +415,13 @@
               <CategoryReference Kind="Category" Name="Lobe" />
               <Choice Kind="ProcessAppFlag" Name="Classifier" />
             </p:NodeReference>
-            <Pin Id="Hdkr8QN08CnMoP0h1LUHnl" Name="Base Url" Kind="InputPin" />
             <Pin Id="IraErNe0QPEMbPPSaKRZvg" Name="Image" Kind="InputPin" />
+            <Pin Id="Hdkr8QN08CnMoP0h1LUHnl" Name="Base Url" Kind="InputPin" />
             <Pin Id="TJAWD3AoQiwOPVZPF0SVmi" Name="Trigger" Kind="InputPin" />
             <Pin Id="CMw3YGHcHDgMEUujbn4L6W" Name="Result" Kind="OutputPin" />
             <Pin Id="J77OYfVbJGZOY3pqISI3M9" Name="In Progress" Kind="OutputPin" />
           </Node>
-          <Node Bounds="167,374,125,19" Id="UB5KU7iDnQhQUVCC3d1yYV">
+          <Node Bounds="140,326,125,19" Id="UB5KU7iDnQhQUVCC3d1yYV">
             <p:NodeReference LastCategoryFullName="OpenCV.Source" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="VideoIn" />
@@ -436,7 +436,7 @@
             <Pin Id="EGM4ozL1clzLVK544c3iO3" Name="Image" Kind="OutputPin" />
             <Pin Id="H1GR3zzfHVBLaFMVMVL0jr" Name="Supported Formats" Kind="OutputPin" />
           </Node>
-          <Node Bounds="167,414,56,19" Id="TdtPgkiwtxWQDegvMChygU">
+          <Node Bounds="140,366,56,19" Id="TdtPgkiwtxWQDegvMChygU">
             <p:NodeReference LastCategoryFullName="OpenCV.Conversion" LastSymbolSource="VL.OpenCV.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ToImage" />
@@ -448,7 +448,7 @@
             <Pin Id="Nowy7tUtxraPO3QtZBJLrc" Name="Pixel Format" Kind="InputPin" />
             <Pin Id="AYMFkbzzrDrO0EAoYpwaTL" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="JuWZmw0Fk4QNUF3vHxD74W" Comment="Base Url" Bounds="142,342,35,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="JuWZmw0Fk4QNUF3vHxD74W" Comment="Base Url" Bounds="168,417,35,15" ShowValueBox="true" isIOBox="true" Value="">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -495,6 +495,14 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="VHO5Wg7Tve0PscsvfkQdMx" Comment="Trigger" Bounds="195,457,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CvUN9WMYq0DLjuDMO9cKoI" Name="Create" />
         <Patch Id="GLV4r8fWROhLjN7nsffuWo" Name="Update" />
@@ -514,6 +522,7 @@
         <Link Id="NLA7MNRIihVLhabqyfsOJf" Ids="Bm6qgIx0LTYO5NomxfEw9U,BubzkXysfvNP169EtVAuXe" />
         <Link Id="TjGEM7srPlUQUZP5AODzbg" Ids="AYZq6dfJmdiLZ4bmqX4sW1,KMd4UcXsDXdPJ6V4kBD89X" />
         <Link Id="P5fujVCU7HNOFj3gjLGBRL" Ids="MDI6XY9qwiNL0YPVE0zjWE,FYbwyByOn8PPZCYY4zh82G" />
+        <Link Id="SxkhG4CTY7SOGlCU24UxsY" Ids="VHO5Wg7Tve0PscsvfkQdMx,TJAWD3AoQiwOPVZPF0SVmi" />
       </Patch>
     </Node>
   </Patch>
