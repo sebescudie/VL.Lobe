@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>VL.Lobe</id>
+    <version>1.0.0-beta01</version>
+    <authors>sebescudie</authors>
+    <owners>sebescudie</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://www.gnu.org/licenses/</licenseUrl>
+    <projectUrl>https://github.com/sebescudie/VL.Lobe</projectUrl>
+    <description>Allows to run Lobe models in vvvv via the REST API </description>
+    <summary>Allows to run Lobe models in vvvv via the REST API y</summary>
+    <releaseNotes>Inital preview</releaseNotes>
+    <language>en-US</language>
+    <tags>vl lobe ml classification</tags>
+    <dependencies>
+      <dependency id="RestSharp" version="106.11.7" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\*.vl"/>
+    <file src="..\**\*.vl"/>
+  </files>
+</package>
