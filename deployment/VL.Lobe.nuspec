@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>VL.Lobe</id>
-    <version>1.0.0-beta01</version>
+    <version>1.0.0-beta02</version>
     <authors>sebescudie</authors>
     <owners>sebescudie</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/sebescudie/VL.Lobe</projectUrl>
     <description>Allows to run Lobe models in vvvv via the REST API </description>
     <summary>Allows to run Lobe models in vvvv via the REST API y</summary>
-    <releaseNotes>Inital preview</releaseNotes>
+    <releaseNotes>Updates to Lobe 0.9.322.2</releaseNotes>
     <language>en-US</language>
     <tags>vl lobe ml classification</tags>
     <dependencies>
