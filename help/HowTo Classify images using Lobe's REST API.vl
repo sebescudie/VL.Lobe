@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="AN1LNGltrn7NbP4RbiZEJp" LanguageVersion="2020.3.0.53" Version="0.128">
-  <NugetDependency Id="VFdymVtTf0cPttoHP3EI0z" Location="VL.CoreLib" Version="2020.3.0-0053-gd338f20e7b" />
+<Document xmlns:p="property" Id="AN1LNGltrn7NbP4RbiZEJp" LanguageVersion="2021.4.0.61" Version="0.128">
+  <NugetDependency Id="VFdymVtTf0cPttoHP3EI0z" Location="VL.CoreLib" Version="2021.4.0-0061-g0f03ee8cb3" />
   <Patch Id="LhMZNuULUIkNI7YL1zt2vM">
     <Canvas Id="B4yMvWlEuWSQCAKmiLDHG3" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -418,66 +418,15 @@
             <Pin Id="IraErNe0QPEMbPPSaKRZvg" Name="Image" Kind="InputPin" />
             <Pin Id="Hdkr8QN08CnMoP0h1LUHnl" Name="Base Url" Kind="InputPin" />
             <Pin Id="TJAWD3AoQiwOPVZPF0SVmi" Name="Trigger" Kind="InputPin" />
-            <Pin Id="CMw3YGHcHDgMEUujbn4L6W" Name="Result" Kind="OutputPin" />
-            <Pin Id="J77OYfVbJGZOY3pqISI3M9" Name="In Progress" Kind="OutputPin" />
+            <Pin Id="UzQD70HldkPNBWMmzhMFSY" Name="Label" Kind="OutputPin" />
+            <Pin Id="KcFuaFZv4zONHnjhfEgEIL" Name="Confidence" Kind="OutputPin" />
           </Node>
-          <Node Bounds="140,326,125,19" Id="UB5KU7iDnQhQUVCC3d1yYV">
-            <p:NodeReference LastCategoryFullName="OpenCV.Source" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="VideoIn" />
-            </p:NodeReference>
-            <Pin Id="PQDLqGUQREIQaAqYGVpKul" Name="Video Input Device" Kind="InputPin" />
-            <Pin Id="Vc1w89NLOd3M4PjFj9pn5X" Name="Width" Kind="InputPin" />
-            <Pin Id="RwPgUas59bQQGBMiRZ2pxM" Name="Height" Kind="InputPin" />
-            <Pin Id="KCAtPNIWnycO0IiBk4Ah8T" Name="FPS" Kind="InputPin" />
-            <Pin Id="B7UIsEx6mg3LulzaLAN3D6" Name="FourCC" Kind="InputPin" />
-            <Pin Id="TL865roHoi8P7rjQf78Tkq" Name="Show Properties" Kind="InputPin" />
-            <Pin Id="JNhRCKG5uA2L4jEU8sAI9p" Name="Enabled" Kind="InputPin" />
-            <Pin Id="EGM4ozL1clzLVK544c3iO3" Name="Image" Kind="OutputPin" />
-            <Pin Id="H1GR3zzfHVBLaFMVMVL0jr" Name="Supported Formats" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="140,366,56,19" Id="TdtPgkiwtxWQDegvMChygU">
-            <p:NodeReference LastCategoryFullName="OpenCV.Conversion" LastSymbolSource="VL.OpenCV.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="ToImage" />
-              <CategoryReference Kind="Category" Name="Conversion" NeedsToBeDirectParent="true">
-                <p:OuterCategoryReference Kind="Category" Name="OpenCV" NeedsToBeDirectParent="true" />
-              </CategoryReference>
-            </p:NodeReference>
-            <Pin Id="BCxnQtpFxRbOy7NVvbvcSb" Name="Input" Kind="InputPin" />
-            <Pin Id="Nowy7tUtxraPO3QtZBJLrc" Name="Pixel Format" Kind="InputPin" />
-            <Pin Id="AYMFkbzzrDrO0EAoYpwaTL" Name="Output" Kind="OutputPin" />
-          </Node>
-          <Pad Id="JuWZmw0Fk4QNUF3vHxD74W" Comment="Base Url" Bounds="168,417,35,15" ShowValueBox="true" isIOBox="true" Value="">
+          <Pad Id="JuWZmw0Fk4QNUF3vHxD74W" Comment="Base Url" Bounds="168,417,92,4" ShowValueBox="true" isIOBox="true" Value="http://localhost:38101/v1/predict/db622f0c-6b34-476b-8eb1-d7ac5ddf1849">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="140,521,65,19" Id="CQslB9YXIiKN1iJYdfPjQ3">
-            <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
-            </p:NodeReference>
-            <Pin Id="RZcp3YZ3kv6LmWXOAQM2se" Name="Async Notifications" Kind="InputPin" />
-            <Pin Id="OleyHM9X12IM18QV3HHtUj" Name="Reset" Kind="InputPin" />
-            <Pin Id="Bm6qgIx0LTYO5NomxfEw9U" Name="Value" Kind="OutputPin" />
-            <Pin Id="HioT2bOKasJLOCgUeCpTjC" Name="On Data" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="140,563,71,26" Id="M7DDmCmf92aLrjBFjdMtnH">
-            <p:NodeReference LastCategoryFullName="ML.Lobe.ClassifierResult" LastSymbolSource="VL.Lobe.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="ClassifierResult" />
-              <Choice Kind="OperationCallFlag" Name="Split" />
-            </p:NodeReference>
-            <Pin Id="BubzkXysfvNP169EtVAuXe" Name="Input" Kind="StateInputPin" />
-            <Pin Id="MDI6XY9qwiNL0YPVE0zjWE" Name="Labels" Kind="OutputPin" />
-            <Pin Id="AYZq6dfJmdiLZ4bmqX4sW1" Name="Prediction" Kind="OutputPin" />
-          </Node>
-          <Pad Id="KMd4UcXsDXdPJ6V4kBD89X" Comment="Prediction" Bounds="208,608,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FYbwyByOn8PPZCYY4zh82G" Comment="Labels" Bounds="142,641,197,59" ShowValueBox="true" isIOBox="true">
-            <p:Value />
-          </Pad>
-          <Pad Id="S228aUnWI3WOmW4sbxmNT9" Bounds="451,388,335,216" ShowValueBox="true" isIOBox="true" Value="First, go to the Lobe application, give it some images and train your model.&#xD;&#xA;&#xD;&#xA;When you're happy with it, click Export in the burger menu, and select Local API.&#xD;&#xA;&#xD;&#xA;You will get a URL that you can paste in the Base Url field of the Classifier node.&#xD;&#xA;&#xD;&#xA;Bang the Trigger pin and you should get classification results.">
+          <Pad Id="S228aUnWI3WOmW4sbxmNT9" Bounds="457,357,335,154" ShowValueBox="true" isIOBox="true" Value="First, go to the Lobe application, give it some images and train your model.&#xD;&#xA;&#xD;&#xA;When you're happy with it, go to the Use section, then click the Export tab and select Lobe Connect.&#xD;&#xA;&#xD;&#xA;You will get a URL that you can paste in the Base Url field of the Classifier node.&#xD;&#xA;&#xD;&#xA;Bang the Trigger pin and you should get classification results.">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -486,7 +435,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Sdk9VtQcYPFLHZC02w2gzN" Bounds="132,208,500,19" ShowValueBox="true" isIOBox="true" Value="In this patch, we'll run the model trained by Lobe via the REST API it exposes locally.">
+          <Pad Id="Sdk9VtQcYPFLHZC02w2gzN" Bounds="132,163,500,19" ShowValueBox="true" isIOBox="true" Value="In this patch, we'll run the model trained by Lobe via the REST API it exposes locally.">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -503,30 +452,71 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="139,251,65,19" Id="LPZUdEZSfY8O6DM5v7DDD5">
+            <p:NodeReference LastCategoryFullName="Video.MediaFoundation" LastSymbolSource="VL.Video.MediaFoundation.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="VideoIn" />
+            </p:NodeReference>
+            <Pin Id="GeWUSHsl8IuQCaA6nTDJFB" Name="Device" Kind="InputPin" DefaultValue="HD Pro Webcam C920">
+              <p:TypeAnnotation LastCategoryFullName="Video.MediaFoundation" LastSymbolSource="VL.Video.MediaFoundation.vl">
+                <Choice Kind="TypeFlag" Name="VideoCaptureDeviceEnumEntry" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="HyTTGjhh01AOEwyp0PhjJV" Name="Preferred Size" Kind="InputPin" DefaultValue="800, 600">
+              <p:TypeAnnotation LastCategoryFullName="Stride.API.Core.Mathematics" LastSymbolSource="VL.Stride.Runtime.TypeForwards.vl">
+                <Choice Kind="TypeFlag" Name="Int2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Qk2TWUvtQpPM5pUMWrtsph" Name="Preferred FPS" Kind="InputPin" />
+            <Pin Id="GTKIsjtUbpkLSndRnZvq61" Name="Enabled" Kind="InputPin" />
+            <Pin Id="PIv5Bz07dxxPw5oFY0jSEG" Name="Output" Kind="OutputPin" />
+            <Pin Id="AdAwmiAdoJnMQ4gkba2uW1" Name="Discarded Frames" Kind="OutputPin" />
+            <Pin Id="JeYd13SfujIOL6hQJEMHOt" Name="Actual FPS" Kind="OutputPin" />
+            <Pin Id="KkMV2nVdy9xN6dUbLKL2mV" Name="Supported Formats" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="139,346,91,19" Id="BMOQ2np2l6iM5KeMUruRhi">
+            <p:NodeReference LastCategoryFullName="Stride.Textures" LastSymbolSource="VL.Stride.Rendering.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="TextureToImage" />
+            </p:NodeReference>
+            <Pin Id="QZJvdmHIiS7LV9qC0ZlXz2" Name="Input" Kind="InputPin" />
+            <Pin Id="Qwnyx1js3hBNZatWDAwroT" Name="Frame Delay" Kind="InputPin" />
+            <Pin Id="FRLHgaUFmqpN6HYLAGUloA" Name="Size" Kind="InputPin" DefaultValue="100, 75">
+              <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Vector2" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="MzxRbbRztqNNqdTAO3iP1I" Name="New Format" Kind="InputPin" />
+            <Pin Id="AIMygBTKlEBN5lItSY6Ajc" Name="Output" Kind="OutputPin" />
+            <Pin Id="VeIbuD7f9tOLpn0sIA4m5f" Name="Is Blocking" Kind="OutputPin" />
+            <Pin Id="MVijxz36NZLLdtPaGCJXQ1" Name="Readback Time" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Oq7UDnijHJWL796BvuIYyG" Comment="Label" Bounds="102,556,63,13" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="LvoO9YGOtrAPiceoNVyXoc" Comment="Confidence" Bounds="233,555,44,79" ShowValueBox="true" isIOBox="true" Value="0" />
         </Canvas>
         <Patch Id="CvUN9WMYq0DLjuDMO9cKoI" Name="Create" />
         <Patch Id="GLV4r8fWROhLjN7nsffuWo" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="AyPCegEfoDmNQmRs9jLtw6">
           <Fragment Id="E230QsVKh2qQbK5DjduBER" Patch="CvUN9WMYq0DLjuDMO9cKoI" Enabled="true" />
           <Fragment Id="AuOPILvhesaNYrCW7lUX8V" Patch="GLV4r8fWROhLjN7nsffuWo" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="HzZhh66dvmgMZHZuJBd0jI" Ids="EGM4ozL1clzLVK544c3iO3,BCxnQtpFxRbOy7NVvbvcSb" />
-        <Link Id="ToQUxYVfUBoQJgs8QWEMPp" Ids="AYMFkbzzrDrO0EAoYpwaTL,IraErNe0QPEMbPPSaKRZvg" />
         <Link Id="J9lHCjIiENFP4DzLKUoKd3" Ids="JuWZmw0Fk4QNUF3vHxD74W,Hdkr8QN08CnMoP0h1LUHnl" />
-        <Link Id="LDVamDY6Ph6QRDrQoqBVy6" Ids="CMw3YGHcHDgMEUujbn4L6W,RZcp3YZ3kv6LmWXOAQM2se" />
-        <Link Id="NLA7MNRIihVLhabqyfsOJf" Ids="Bm6qgIx0LTYO5NomxfEw9U,BubzkXysfvNP169EtVAuXe" />
-        <Link Id="TjGEM7srPlUQUZP5AODzbg" Ids="AYZq6dfJmdiLZ4bmqX4sW1,KMd4UcXsDXdPJ6V4kBD89X" />
-        <Link Id="P5fujVCU7HNOFj3gjLGBRL" Ids="MDI6XY9qwiNL0YPVE0zjWE,FYbwyByOn8PPZCYY4zh82G" />
         <Link Id="SxkhG4CTY7SOGlCU24UxsY" Ids="VHO5Wg7Tve0PscsvfkQdMx,TJAWD3AoQiwOPVZPF0SVmi" />
+        <Link Id="Gdl6G1PhYhnNDuxTijQL2U" Ids="PIv5Bz07dxxPw5oFY0jSEG,QZJvdmHIiS7LV9qC0ZlXz2" />
+        <Link Id="AkNd7I8AFyaPGqGI6qeGAW" Ids="AIMygBTKlEBN5lItSY6Ajc,IraErNe0QPEMbPPSaKRZvg" />
+        <Link Id="IYNDxbYeOtyQOLDhzufZZh" Ids="UzQD70HldkPNBWMmzhMFSY,Oq7UDnijHJWL796BvuIYyG" />
+        <Link Id="St3TbUWhcDBN5Cnj8wGYwf" Ids="KcFuaFZv4zONHnjhfEgEIL,LvoO9YGOtrAPiceoNVyXoc" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="Cht5i6EXhe2MGlgQ4YA5ac" Location="VL.Lobe" Version="0.0.0.0" />
-  <NugetDependency Id="RVifCT3WvyNLOFqIgHdbBJ" Location="VL.Skia" Version="2020.3.0-0053-gd338f20e7b" />
-  <NugetDependency Id="D3FhEGZukPvOagO5xAP8ov" Location="VL.OpenCV" Version="1.1.2" />
+  <NugetDependency Id="RVifCT3WvyNLOFqIgHdbBJ" Location="VL.Skia" Version="2021.4.0-0061-g0f03ee8cb3" />
+  <NugetDependency Id="N81ZfdCkJjFOGJkvL8tyht" Location="VL.Video.MediaFoundation" Version="0.0.7-alpha" />
+  <NugetDependency Id="DNedFBO6q1VP53YnAJNhbF" Location="VL.Stride" Version="2021.4.0-0061-g0f03ee8cb3" />
+  <PlatformDependency Id="CkDXb88vksBMPIhRkXPBBK" Location="System" />
+  <PlatformDependency Id="ClmnJTT7M7QPqLzX3tGAco" Location="mscorlib" />
 </Document>
